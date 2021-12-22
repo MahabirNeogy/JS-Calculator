@@ -1,0 +1,121 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #ecf0f3;
+    outline: none;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.calculator{
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                      5px 5px 12px rgba(0, 0, 0, .16);
+    display: grid;
+    grid-template-columns: repeat(4,60px);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+input{
+    grid-column: span 4;
+    height: 50px;
+    background-color: #ecf0f3;
+    box-shadow: inset 5px 5px 12px rgba(0, 0, 0, .16),
+    -5px -5px 12px #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 26px;
+    color: rgb(70, 70, 70);
+    text-align: end;
+    /* margin: auto; */
+    /* margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+} */ 
+
+*, *::after,*::before{
+    box-sizing: border-box;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background:rgb(145, 135, 168);
+}
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px,auto) repeat(5,100px);
+    min-height: 100vh;
+}
+/* .calculator-grid > button:hover{
+    background-color: rgb(29, 86, 170);
+} */
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.output .previous-operand{
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+.output .current-operand{
+    color: white;
+    font-size: 2.5rem;
+}
+
+
+
+
+
+.calculator-grid > button{
+    /* height: 90px; */
+    /* width: 90px; */
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                        5px 5px 12px rgba(0, 0, 0, .86);
+    border-radius: 11px;
+     margin-top: 10px; 
+    border: none;
+    font-size: 19px;
+    cursor: pointer;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, 1.9);
+  }
+
+.mahabir{
+    margin-left: 1300px;
+    margin-top: -100px;
+    font-size:20px;
+    color: rgb(20, 255, 20);
+}
